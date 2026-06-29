@@ -1,0 +1,65 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Client Dashboard — Stackly</title><link rel="stylesheet" href="style.css"></head><body>
+<div class="dash-layout">
+  <aside class="sidebar">
+    <div class="sidebar-logo" data-logo-click><img src="img/logo_cube.svg" alt="S"><div class="sidebar-logo-name">Stack<span>ly</span></div></div>
+    <nav class="sidebar-nav">
+      <div class="sidebar-section-label">Main</div>
+      <a href="#" class="sidebar-link active"><span class="s-icon">🏠</span> Dashboard</a>
+      <a href="#" class="sidebar-link" data-404><span class="s-icon">📋</span> My Engagements</a>
+      <a href="#" class="sidebar-link" data-404><span class="s-icon">📅</span> Sessions</a>
+      <a href="#" class="sidebar-link" data-404><span class="s-icon">📁</span> Documents</a>
+      <a href="#" class="sidebar-link" data-404><span class="s-icon">📊</span> Reports</a>
+      <div class="sidebar-section-label">Account</div>
+      <a href="#" class="sidebar-link" data-404><span class="s-icon">👤</span> My Profile</a>
+      <a href="#" class="sidebar-link" data-404><span class="s-icon">💳</span> Billing</a>
+      <a href="#" class="sidebar-link" data-404><span class="s-icon">🔔</span> Notifications</a>
+      <a href="#" class="sidebar-link" data-404><span class="s-icon">⚙️</span> Settings</a>
+      <div class="sidebar-section-label">Support</div>
+      <a href="#" class="sidebar-link" data-404><span class="s-icon">💬</span> Chat Consultant</a>
+      <a href="#" class="sidebar-link" data-404><span class="s-icon">❓</span> Help Centre</a>
+    </nav>
+    <div class="sidebar-user"><div class="user-avatar" data-user-initial>S</div><div><div class="user-name" data-user-name>Santhosh Kumar</div><div class="user-role" data-user-role>Member</div></div></div>
+    <button class="dash-logout" data-logout>🚪 Sign Out</button>
+  </aside>
+  <main class="dash-main">
+    <div class="dash-header">
+      <div><h1 class="dash-greet">Welcome back, <span data-user-name>Santhosh</span> 👋</h1><p class="dash-sub">Here's what's happening with your Stackly engagement today.</p></div>
+      <a href="#" class="btn-dark btn-sm" data-404>+ Book Session</a>
+    </div>
+    <div class="dash-stats">
+      <div class="dash-stat"><div class="dash-stat-icon">📋</div><div><div class="dash-stat-num">2</div><div class="dash-stat-label">Active Engagements</div></div></div>
+      <div class="dash-stat"><div class="dash-stat-icon">📅</div><div><div class="dash-stat-num">3</div><div class="dash-stat-label">Upcoming Sessions</div></div></div>
+      <div class="dash-stat"><div class="dash-stat-icon">📊</div><div><div class="dash-stat-num">7</div><div class="dash-stat-label">Reports Delivered</div></div></div>
+      <div class="dash-stat"><div class="dash-stat-icon">✅</div><div><div class="dash-stat-num">84%</div><div class="dash-stat-label">Milestones Complete</div></div></div>
+    </div>
+    <div class="dash-panels">
+      <div class="dash-panel">
+        <div class="dash-panel-title">Active Engagements</div>
+        <div class="dash-item"><img class="dash-item-img" src="img/hero_analytics.webp" alt=""><div><div class="dash-item-title">Corporate Strategy Review</div><div class="dash-item-sub">Lead: Arjun Krishnamurthy · Growth Plan</div></div><span class="dash-item-badge badge-amber">Active</span></div>
+        <div class="dash-item"><img class="dash-item-img" src="img/hero_control.webp" alt=""><div><div class="dash-item-title">Digital Transformation Roadmap</div><div class="dash-item-sub">Lead: Rahul Menon · Growth Plan</div></div><span class="dash-item-badge badge-amber">In Progress</span></div>
+        <div class="dash-panel-title" style="margin-top:24px">Upcoming Sessions</div>
+        <div class="dash-item"><img class="dash-item-img" src="img/hero_meeting.webp" alt=""><div><div class="dash-item-title">Weekly Strategy Check-In</div><div class="dash-item-sub">Tomorrow, 10:00 AM · Video Call</div></div><span class="dash-item-badge badge-green">Confirmed</span></div>
+        <div class="dash-item"><img class="dash-item-img" src="img/hero_charts.webp" alt=""><div><div class="dash-item-title">Q3 Progress Review</div><div class="dash-item-sub">Friday, 2:00 PM · Board Room</div></div><span class="dash-item-badge badge-amber">Upcoming</span></div>
+        <div class="dash-item"><img class="dash-item-img" src="img/hero_strategy.webp" alt=""><div><div class="dash-item-title">Digital Strategy Workshop</div><div class="dash-item-sub">Next Monday, 9:00 AM · Offsite</div></div><span class="dash-item-badge badge-amber">Scheduled</span></div>
+      </div>
+      <div>
+        <div class="dash-panel" style="margin-bottom:20px">
+          <div class="dash-panel-title">Recommended For You</div>
+          <div class="dash-item" data-404 style="cursor:pointer"><img class="dash-item-img" src="img/hero_growth.webp" alt=""><div><div class="dash-item-title">India Market Entry Playbook</div><div class="dash-item-sub">Strategy Report · 2025</div></div></div>
+          <div class="dash-item" data-404 style="cursor:pointer"><img class="dash-item-img" src="img/hero_business_money.webp" alt=""><div><div class="dash-item-title">Digital Transformation ROI</div><div class="dash-item-sub">Methodology Guide · 2024</div></div></div>
+          <div class="dash-item" data-404 style="cursor:pointer"><img class="dash-item-img" src="img/hero_collab.webp" alt=""><div><div class="dash-item-title">OKR Implementation Toolkit</div><div class="dash-item-sub">Templates & Workshop · 2025</div></div></div>
+        </div>
+        <div class="dash-panel">
+          <div class="dash-panel-title">Quick Actions</div>
+          <div style="display:flex;flex-direction:column;gap:10px;margin-top:4px">
+            <a href="#" class="btn-dark btn-sm" data-404 style="justify-content:center">📞 Book a Session</a>
+            <a href="#" class="btn-outline-dark btn-sm" data-404 style="justify-content:center">📁 View Documents</a>
+            <a href="#" class="btn-outline-dark btn-sm" data-404 style="justify-content:center">💬 Message Consultant</a>
+            <a href="pricing.html" class="btn-outline-dark btn-sm" style="justify-content:center">⬆️ Upgrade Plan</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+<script src="main.js"></script></body></html>
