@@ -1,0 +1,29 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Login — Stackly</title><link rel="stylesheet" href="style.css"></head><body>
+<div id="splash">
+  <div class="splash-inner">
+    <img src="img/logo_cube.svg" alt="S">
+    <div>
+      <div class="splash-name">Stackly</div>
+      <div class="splash-bar"><div class="splash-fill"></div></div>
+    </div>
+  </div>
+</div>
+<div class="auth-page">
+  <div class="auth-card">
+    <div class="auth-logo"><img src="img/logo_cube.svg" alt="S"><div class="auth-logo-name">Stack<span>ly</span></div><div class="auth-logo-tag">BUSINESS CONSULTING</div></div>
+    <h2 class="auth-title">Welcome Back</h2>
+    <div class="role-toggle" data-role="user"><button class="role-btn active" data-role="user">👤 Client</button><button class="role-btn" data-role="admin">🔑 Admin</button></div>
+    <form id="login-form">
+      <div class="form-group"><label class="form-label" for="auth-email">Email Address</label><input type="email" id="auth-email" class="form-input" placeholder="user@stackly.com" value="user@stackly.com"></div>
+      <div class="form-group"><label class="form-label" for="auth-pass">Password</label><div class="pw-wrap"><input type="password" id="auth-pass" class="form-input" placeholder="••••••••" value="user123"><span class="pw-toggle" data-pw-toggle>👁</span></div></div>
+      <div class="forgot-link"><a href="#" data-404>Forgot Password?</a></div>
+      <div class="form-check"><input type="checkbox" id="remember-me"><label class="form-check-label" for="remember-me">Remember me on this device</label></div>
+      <button type="submit" class="btn-dark" style="width:100%;justify-content:center">Login to Dashboard →</button>
+    </form>
+    <div class="auth-divider"><span>or</span></div>
+    <a href="index.html" class="btn-outline-dark" style="width:100%;justify-content:center;display:flex;padding:11px">← Back to Home</a>
+    <div class="auth-link" style="margin-top:20px">New to Stackly? <a href="signup.html">Create Account →</a></div>
+    <div class="cred-hint"><strong>Demo Credentials:</strong><br>Client: user@stackly.com / user123<br>Admin: admin@stackly.com / admin123</div>
+  </div>
+</div>
+<script src="main.js"></script></body></html>

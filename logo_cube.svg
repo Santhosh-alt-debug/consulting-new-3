@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80">
+  <defs>
+    <linearGradient id="tF" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a1a"/>
+      <stop offset="100%" style="stop-color:#333333"/>
+    </linearGradient>
+    <linearGradient id="lF" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#555555"/>
+      <stop offset="100%" style="stop-color:#777777"/>
+    </linearGradient>
+    <linearGradient id="rF" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#888888"/>
+      <stop offset="100%" style="stop-color:#aaaaaa"/>
+    </linearGradient>
+  </defs>
+  <polygon points="40,6 70,22 40,38 10,22" fill="url(#tF)"/>
+  <polygon points="10,22 40,38 40,68 10,52" fill="url(#lF)"/>
+  <polygon points="40,38 70,22 70,52 40,68" fill="url(#rF)"/>
+  <polygon points="40,6 70,22 55,30 25,14" fill="white" opacity="0.15"/>
+</svg>

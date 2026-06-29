@@ -1,0 +1,92 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Admin — Stackly</title><link rel="stylesheet" href="style.css">
+<style>
+.live-pill{display:inline-flex;align-items:center;gap:6px;padding:4px 12px;background:rgba(34,197,94,.1);border:1px solid rgba(34,197,94,.2);font-size:10px;font-weight:700;color:#16a34a;letter-spacing:1.5px}
+.live-pill::before{content:"";width:6px;height:6px;border-radius:50%;background:#22c55e;animation:blink 1.5s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+.trend-up{color:#16a34a;font-size:11px;font-weight:600}
+.dtable{width:100%;border-collapse:collapse}
+.dtable th{text-align:left;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted2);padding:10px 12px;border-bottom:1px solid var(--border)}
+.dtable td{padding:11px 12px;font-size:13px;color:var(--muted);border-bottom:1px solid var(--border);vertical-align:middle}
+.dtable tr:last-child td{border-bottom:none}
+.dtable tr:hover td{background:var(--cream2);color:var(--charcoal)}
+.pill{padding:3px 10px;font-size:10px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;white-space:nowrap}
+.pg{background:rgba(34,197,94,.1);color:#16a34a}.pb{background:var(--cream2);color:var(--charcoal)}.pa{background:rgba(245,158,11,.08);color:#b45309}.pr{background:rgba(204,51,51,.08);color:#cc3333}
+.mini-chart{display:flex;align-items:flex-end;gap:3px;height:44px}
+.mini-bar{flex:1;background:var(--cream2);border-top:2px solid var(--charcoal2);min-height:4px;transition:background .2s}
+.mini-bar:hover{background:var(--cream3)}
+.act-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;margin-top:6px}
+.dg{background:#22c55e}.db{background:var(--charcoal)}.da{background:#f59e0b}.dr{background:#cc3333}
+.p2col{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.pend{background:var(--cream);border:1px solid var(--border);padding:14px;display:flex;align-items:flex-start;gap:12px;margin-bottom:12px;border-left:2px solid var(--border2)}
+.pu{border-left-color:#cc3333}.prev{border-left-color:var(--charcoal)}.pp{border-left-color:#b45309}
+@media(max-width:900px){.p2col{grid-template-columns:1fr}}
+</style>
+</head><body>
+<div class="dash-layout">
+  <aside class="sidebar">
+    <div class="sidebar-logo" data-logo-click><img src="img/logo_cube.svg" alt="S"><div class="sidebar-logo-name">Stack<span>ly</span></div></div>
+    <nav class="sidebar-nav">
+      <div class="sidebar-section-label">Overview</div>
+      <a href="#" class="sidebar-link active"><span class="s-icon">🏠</span> Dashboard</a>
+      <a href="#" class="sidebar-link" data-404><span class="s-icon">📊</span> Analytics</a>
+      <a href="#" class="sidebar-link" data-404><span class="s-icon">📈</span> Reports</a>
+      <div class="sidebar-section-label">Management</div>
+      <a href="#" class="sidebar-link" data-404><span class="s-icon">👥</span> All Users</a>
+      <a href="#" class="sidebar-link" data-404><span class="s-icon">🤝</span> Engagements</a>
+      <a href="#" class="sidebar-link" data-404><span class="s-icon">💼</span> Consultants</a>
+      <a href="#" class="sidebar-link" data-404><span class="s-icon">📋</span> Content</a>
+      <a href="#" class="sidebar-link" data-404><span class="s-icon">💳</span> Billing</a>
+      <div class="sidebar-section-label">System</div>
+      <a href="#" class="sidebar-link" data-404><span class="s-icon">🔔</span> Alerts</a>
+      <a href="#" class="sidebar-link" data-404><span class="s-icon">🔒</span> Security</a>
+      <a href="#" class="sidebar-link" data-404><span class="s-icon">⚙️</span> Settings</a>
+    </nav>
+    <div class="sidebar-user"><div class="user-avatar" data-user-initial>A</div><div><div class="user-name" data-user-name>Admin User</div><div class="user-role" data-user-role>Administrator</div></div></div>
+    <button class="dash-logout" data-logout>🚪 Sign Out</button>
+  </aside>
+  <main class="dash-main">
+    <div class="dash-header">
+      <div><h1 class="dash-greet">Admin <span>Control Centre</span> 🛡️</h1><p class="dash-sub">Platform overview · Updated: Today, 9:42 AM IST</p></div>
+      <div style="display:flex;align-items:center;gap:10px"><span class="live-pill">Live</span><a href="#" class="btn-dark btn-sm" data-404>+ New Engagement</a></div>
+    </div>
+    <div class="dash-stats" style="margin-bottom:24px">
+      <div class="dash-stat"><div class="dash-stat-icon">👥</div><div><div class="dash-stat-num">1,284</div><div class="dash-stat-label">Total Users</div><div class="trend-up">▲ +34 this week</div></div></div>
+      <div class="dash-stat"><div class="dash-stat-icon">💰</div><div><div class="dash-stat-num">₹4.7Cr</div><div class="dash-stat-label">Revenue (MoM)</div><div class="trend-up">▲ +18.4%</div></div></div>
+      <div class="dash-stat"><div class="dash-stat-icon">📋</div><div><div class="dash-stat-num">312</div><div class="dash-stat-label">Content Items</div><div class="trend-up">▲ +12 this month</div></div></div>
+      <div class="dash-stat"><div class="dash-stat-icon">🟢</div><div><div class="dash-stat-num">99.8%</div><div class="dash-stat-label">Uptime</div><div class="trend-up">▲ 30-day avg</div></div></div>
+    </div>
+    <div class="dash-panel" style="margin-bottom:20px;padding:20px 24px">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px"><div class="dash-panel-title" style="margin-bottom:0">Revenue This Month (₹L)</div><span style="font-size:11px;color:var(--muted2)">Jun 2025</span></div>
+      <div class="mini-chart"><div class="mini-bar" style="height:35%"></div><div class="mini-bar" style="height:45%"></div><div class="mini-bar" style="height:40%"></div><div class="mini-bar" style="height:60%"></div><div class="mini-bar" style="height:50%"></div><div class="mini-bar" style="height:70%"></div><div class="mini-bar" style="height:80%"></div><div class="mini-bar" style="height:65%"></div><div class="mini-bar" style="height:90%"></div><div class="mini-bar" style="height:75%"></div><div class="mini-bar" style="height:100%"></div><div class="mini-bar" style="height:85%"></div><div class="mini-bar" style="height:92%"></div><div class="mini-bar" style="height:78%"></div><div class="mini-bar" style="height:95%"></div><div class="mini-bar" style="height:88%"></div><div class="mini-bar" style="height:100%;background:var(--cream3)"></div><div class="mini-bar" style="height:90%"></div><div class="mini-bar" style="height:76%"></div><div class="mini-bar" style="height:88%"></div></div>
+      <div style="display:flex;justify-content:space-between;margin-top:8px"><span style="font-size:10px;color:var(--muted2)">Jun 1</span><span style="font-size:10px;color:var(--muted2)">Jun 24</span></div>
+    </div>
+    <div class="p2col" style="margin-bottom:20px">
+      <div class="dash-panel">
+        <div class="dash-panel-title">Recent Activity</div>
+        <div style="display:flex;gap:12px;padding:10px 0;border-bottom:1px solid var(--border)"><div class="act-dot dg"></div><div><div style="font-size:13px;font-weight:600;color:var(--charcoal)">New signup — Deepak Ravi</div><div style="font-size:11px;color:var(--muted2)">Growth Plan · Today, 9:18 AM</div></div></div>
+        <div style="display:flex;gap:12px;padding:10px 0;border-bottom:1px solid var(--border)"><div class="act-dot da"></div><div><div style="font-size:13px;font-weight:600;color:var(--charcoal)">Milestone — Retail Corp Phase 2</div><div style="font-size:11px;color:var(--muted2)">Complete · Today, 8:55 AM</div></div></div>
+        <div style="display:flex;gap:12px;padding:10px 0;border-bottom:1px solid var(--border)"><div class="act-dot db"></div><div><div style="font-size:13px;font-weight:600;color:var(--charcoal)">Report published — Q2 Strategy Digest</div><div style="font-size:11px;color:var(--muted2)">Content Team · Today, 7:40 AM</div></div></div>
+        <div style="display:flex;gap:12px;padding:10px 0;border-bottom:1px solid var(--border)"><div class="act-dot dr"></div><div><div style="font-size:13px;font-weight:600;color:var(--charcoal)">Payment failed — Nexus Infra Ltd</div><div style="font-size:11px;color:var(--muted2)">Starter Plan · Yesterday</div></div></div>
+        <div style="display:flex;gap:12px;padding:10px 0"><div class="act-dot dg"></div><div><div style="font-size:13px;font-weight:600;color:var(--charcoal)">Upgrade — Srikanth Enterprises</div><div style="font-size:11px;color:var(--muted2)">Starter → Growth</div></div></div>
+      </div>
+      <div class="dash-panel">
+        <div class="dash-panel-title">Pending Actions</div>
+        <div class="pend pu"><div style="font-size:18px">⚠️</div><div style="flex:1"><div style="font-size:13px;font-weight:600;color:var(--charcoal);margin-bottom:4px">Payment retry — Nexus Infra Ltd</div><div style="font-size:11px;color:var(--muted2)">₹49,000 pending</div></div><span class="pill pr">Urgent</span></div>
+        <div class="pend pp"><div style="font-size:18px">📝</div><div style="flex:1"><div style="font-size:13px;font-weight:600;color:var(--charcoal);margin-bottom:4px">Approve 3 registrations</div><div style="font-size:11px;color:var(--muted2)">Awaiting admin review</div></div><span class="pill pa">Pending</span></div>
+        <div class="pend prev"><div style="font-size:18px">📄</div><div style="flex:1"><div style="font-size:13px;font-weight:600;color:var(--charcoal);margin-bottom:4px">Review ESG Report 2025</div><div style="font-size:11px;color:var(--muted2)">Draft by Anjali Rajan</div></div><span class="pill pb">Review</span></div>
+        <div class="pend pu"><div style="font-size:18px">👥</div><div style="flex:1"><div style="font-size:13px;font-weight:600;color:var(--charcoal);margin-bottom:4px">Assign consultant — Titan Corp</div><div style="font-size:11px;color:var(--muted2)">New enterprise client</div></div><span class="pill pr">Urgent</span></div>
+      </div>
+    </div>
+    <div class="dash-panel">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px"><div class="dash-panel-title" style="margin-bottom:0">Recent User Accounts</div><a href="#" class="see-all" data-404 style="font-size:11px;padding:6px 14px">View All →</a></div>
+      <div style="overflow-x:auto"><table class="dtable"><thead><tr><th>User</th><th>Plan</th><th>Joined</th><th>Status</th><th>Revenue</th></tr></thead><tbody>
+        <tr><td><strong style="color:var(--charcoal)">Deepak Ravi</strong><br><span style="font-size:11px;color:var(--muted2)">deepak@example.com</span></td><td><span class="pill pb">Growth</span></td><td style="color:var(--muted2)">Today</td><td><span class="pill pg">Active</span></td><td style="font-weight:700;color:var(--charcoal)">₹1,20,000</td></tr>
+        <tr><td><strong style="color:var(--charcoal)">Srikanth Enterprises</strong><br><span style="font-size:11px;color:var(--muted2)">srikanth@srient.com</span></td><td><span class="pill pb">Growth</span></td><td style="color:var(--muted2)">Jun 20</td><td><span class="pill pg">Active</span></td><td style="font-weight:700;color:var(--charcoal)">₹1,20,000</td></tr>
+        <tr><td><strong style="color:var(--charcoal)">Nexus Infra Ltd</strong><br><span style="font-size:11px;color:var(--muted2)">accounts@nexus.in</span></td><td><span class="pill pa">Starter</span></td><td style="color:var(--muted2)">Jun 14</td><td><span class="pill pr">Overdue</span></td><td style="font-weight:700;color:#cc3333">₹0</td></tr>
+        <tr><td><strong style="color:var(--charcoal)">Titan Corp</strong><br><span style="font-size:11px;color:var(--muted2)">ceo@titancorp.com</span></td><td><span class="pill pg">Enterprise</span></td><td style="color:var(--muted2)">Jun 18</td><td><span class="pill pa">Onboarding</span></td><td style="font-weight:700;color:var(--charcoal)">Custom</td></tr>
+        <tr><td><strong style="color:var(--charcoal)">Priya Kaliyaperumal</strong><br><span style="font-size:11px;color:var(--muted2)">priya.k@venture.io</span></td><td><span class="pill pa">Starter</span></td><td style="color:var(--muted2)">Jun 10</td><td><span class="pill pg">Active</span></td><td style="font-weight:700;color:var(--charcoal)">₹49,000</td></tr>
+      </tbody></table></div>
+    </div>
+  </main>
+</div>
+<script src="main.js"></script></body></html>

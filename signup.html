@@ -1,0 +1,35 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Sign Up — Stackly</title><link rel="stylesheet" href="style.css"></head><body>
+<div id="splash">
+  <div class="splash-inner">
+    <img src="img/logo_cube.svg" alt="S">
+    <div>
+      <div class="splash-name">Stackly</div>
+      <div class="splash-bar"><div class="splash-fill"></div></div>
+    </div>
+  </div>
+</div>
+<div class="auth-page">
+  <div class="auth-card" style="max-width:520px">
+    <div class="auth-logo"><img src="img/logo_cube.svg" alt="S"><div class="auth-logo-name">Stack<span>ly</span></div><div class="auth-logo-tag">BUSINESS CONSULTING</div></div>
+    <h2 class="auth-title">Create Account</h2>
+    <div class="role-toggle" data-role="user"><button class="role-btn active" data-role="user">👤 Client</button><button class="role-btn" data-role="admin">🔑 Admin</button></div>
+    <form id="signup-form">
+      <div class="form-row">
+        <div class="form-group"><label class="form-label" for="su-name">Full Name (letters only)</label><input type="text" id="su-name" class="form-input" placeholder="Santhosh Kumar" maxlength="24" data-name-only></div>
+        <div class="form-group"><label class="form-label" for="su-email">Email Address</label><input type="email" id="su-email" class="form-input" placeholder="you@company.com"></div>
+      </div>
+      <div class="form-group"><label class="form-label" for="su-phone">Phone Number (10 digits only)</label><input type="tel" id="su-phone" class="form-input" placeholder="9876543210" maxlength="10" data-phone></div>
+      <div class="form-row">
+        <div class="form-group"><label class="form-label" for="su-pass">Password</label><div class="pw-wrap"><input type="password" id="su-pass" class="form-input" placeholder="Min 6 characters"><span class="pw-toggle" data-pw-toggle>👁</span></div></div>
+        <div class="form-group"><label class="form-label" for="su-confirm">Confirm Password</label><div class="pw-wrap"><input type="password" id="su-confirm" class="form-input" placeholder="Repeat password"><span class="pw-toggle" data-pw-toggle>👁</span></div></div>
+      </div>
+      <div class="form-group"><label class="form-label" for="su-company">Company Name</label><input type="text" id="su-company" class="form-input" placeholder="Your Company Pvt. Ltd."></div>
+      <div class="form-check"><input type="checkbox" id="terms"><label class="form-check-label" for="terms">I agree to the <a href="#" data-404>Terms of Service</a> and <a href="#" data-404>Privacy Policy</a></label></div>
+      <button type="submit" class="btn-dark" style="width:100%;justify-content:center">Create My Account →</button>
+    </form>
+    <div class="auth-divider"><span>or</span></div>
+    <a href="index.html" class="btn-outline-dark" style="width:100%;justify-content:center;display:flex;padding:11px">← Back to Home</a>
+    <div class="auth-link" style="margin-top:16px">Already have an account? <a href="login.html">Login →</a></div>
+  </div>
+</div>
+<script src="main.js"></script></body></html>
